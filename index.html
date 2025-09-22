@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carosello di collegamenti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="background-canvas" aria-hidden="true"></canvas>
+    <header class="page-header">
+      <div class="wrapper">
+        <h1>Esplora nuove destinazioni</h1>
+        <p>
+          Scopri cinque esperienze uniche tramite il nostro carosello di
+          collegamenti. Ogni proposta include un'immagine evocativa, un titolo e
+          una breve descrizione.
+        </p>
+      </div>
+    </header>
+    <main class="wrapper">
+      <section class="carousel" aria-label="Carosello di collegamenti">
+        <button class="nav prev" type="button" aria-label="Mostra elemento precedente">
+          &#10094;
+        </button>
+        <div class="viewport">
+          <div class="slides">
+            <a class="slide" href="https://it.wikipedia.org/wiki/Island" target="_blank">
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+                alt="Paesaggio con aurora boreale"
+              />
+              <div class="caption">
+                <h3>Avventura in Islanda</h3>
+                <p>Vulcani attivi, ghiacciai e l'affascinante aurora boreale.</p>
+              </div>
+            </a>
+            <a class="slide" href="https://it.wikipedia.org/wiki/Ky%C5%8Dto" target="_blank">
+              <img
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80"
+                alt="Tempio tradizionale giapponese"
+              />
+              <div class="caption">
+                <h3>Cultura a Kyoto</h3>
+                <p>Templi secolari, giardini zen e tradizioni intramontabili.</p>
+              </div>
+            </a>
+            <a class="slide" href="https://it.wikipedia.org/wiki/Barcellona" target="_blank">
+              <img
+                src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=1200&q=80"
+                alt="Vista sulla Sagrada Família"
+              />
+              <div class="caption">
+                <h3>Architettura a Barcellona</h3>
+                <p>Gaudí, arte modernista e colori vibranti in ogni quartiere.</p>
+              </div>
+            </a>
+            <a class="slide" href="https://it.wikipedia.org/wiki/Citt%C3%A0_del_Capo" target="_blank">
+              <img
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80"
+                alt="Veduta di Table Mountain"
+              />
+              <div class="caption">
+                <h3>Natura a Città del Capo</h3>
+                <p>Paesaggi oceanici, biodiversità e percorsi panoramici.</p>
+              </div>
+            </a>
+            <a class="slide" href="https://it.wikipedia.org/wiki/New_York" target="_blank">
+              <img
+                src="https://images.unsplash.com/photo-1438979315413-de5df30042a1?auto=format&fit=crop&w=1200&q=80"
+                alt="Skyline di New York al tramonto"
+              />
+              <div class="caption">
+                <h3>Energia a New York</h3>
+                <p>Grattacieli iconici, spettacoli e cultura cosmopolita.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="nav next" type="button" aria-label="Mostra elemento successivo">
+          &#10095;
+        </button>
+        <div class="dots" role="tablist" aria-label="Seleziona elemento del carosello">
+          <button class="dot" type="button" role="tab" aria-label="Avventura in Islanda" aria-controls="slide-1"></button>
+          <button class="dot" type="button" role="tab" aria-label="Cultura a Kyoto" aria-controls="slide-2"></button>
+          <button class="dot" type="button" role="tab" aria-label="Architettura a Barcellona" aria-controls="slide-3"></button>
+          <button class="dot" type="button" role="tab" aria-label="Natura a Città del Capo" aria-controls="slide-4"></button>
+          <button class="dot" type="button" role="tab" aria-label="Energia a New York" aria-controls="slide-5"></button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
